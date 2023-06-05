@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: niraj@75032
+      MYSQL_DATABASE: new_schema
+    ports:
+      - 7070:3306
